@@ -23,12 +23,8 @@ const Form = () => {
 
      useEffect(() => {
 
-      
       axios.get("https://127.0.0.1:8000/api/av/travel/index").then((res: any) => {
       setTravelsList(res.data["travel"]); 
-      console.log(travelsList);
-      console.log(res.data);
-      
       });     
        
     }, [])
