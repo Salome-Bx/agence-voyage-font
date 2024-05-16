@@ -17,9 +17,8 @@ export const home = () => {
 
       
       axios.get("https://127.0.0.1:8000/api/av/travel/index").then((res: any) => {
-      setTravelsList(res.data); 
-      console.log(travelsList);
-      console.log(res.data);
+      setTravelsList(res.data["travel"]); 
+      
       
       });     
        
